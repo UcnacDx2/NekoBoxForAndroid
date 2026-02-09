@@ -8,6 +8,12 @@ sing-box / universal proxy toolchain for Android.
 
 一款使用 sing-box 的 Android 通用代理软件.
 
+## 文档 / Documentation
+
+- 📖 **[链式代理使用指南](./CHAIN_PROXY_GUIDE.md)** / **[Chain Proxy User Guide](./CHAIN_PROXY_GUIDE.md)** - 如何配置和使用链式代理
+- 📖 **[Lumine 网络预处理插件](./LUMINE_USER_GUIDE.md)** / **[Lumine Network Preprocessing Plugin](./LUMINE_USER_GUIDE.md)** - 流量混淆和 DPI 绕过
+- 📁 **[配置示例](./examples/chain_proxy_examples/)** / **[Configuration Examples](./examples/chain_proxy_examples/)** - 实用配置示例
+
 ## 下载 / Downloads
 
 [![GitHub All Releases](https://img.shields.io/github/downloads/Matsuridayo/NekoBoxForAndroid/total?label=downloads-total&logo=github&style=flat-square)](https://github.com/Matsuridayo/NekoBoxForAndroid/releases)
