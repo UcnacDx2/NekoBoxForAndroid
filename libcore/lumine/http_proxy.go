@@ -182,6 +182,8 @@ func forwardHTTPRequest(logger *log.Logger, w http.ResponseWriter, originReq *ht
 	resp, err := transport.RoundTrip(outReq)
 	if err != nil {
 		logger.Println("Transport error:", err)
+		http.Error(w, "Bad Gateway", http.StatusBadGateway)
+		return
 	}
 	defer resp.Body.Close()
 
