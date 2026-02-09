@@ -220,6 +220,7 @@
     <string name="action_naive" translatable="false">Naïve</string>
     <string name="action_anytls" translatable="false">AnyTLS</string>
     <string name="action_hysteria" translatable="false">Hysteria</string>
+    <string name="action_lumine" translatable="false">Lumine</string>
     <string name="action_ssh" translatable="false">SSH</string>
     <string name="action_wireguard" translatable="false">WireGuard</string>
     <string name="action_tuic" translatable="false">TUIC</string>

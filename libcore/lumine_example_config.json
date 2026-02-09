@@ -1,0 +1,53 @@
+{
+  "transmit_file_limit": 100,
+  "socks5_address": "127.0.0.1:1080",
+  "http_address": "127.0.0.1:1081",
+  "dns_addr": "8.8.8.8:53",
+  "udp_minsize": 1024,
+  "socks5_for_doh": "",
+  "max_jump": 3,
+  "fake_ttl_rules": "60-1,120-2,300-5",
+  "dns_cache_ttl": 300,
+  "ttl_cache_ttl": 3600,
+  "default_policy": {
+    "mode": "proxy",
+    "connect_timeout": "10s",
+    "read_timeout": "30s",
+    "write_timeout": "30s",
+    "reply_first": false,
+    "fragment_size": 0,
+    "fragment_sleep": "0ms",
+    "fragment_type": "none",
+    "desync_zero": false,
+    "desync_split": 0,
+    "desync_split_position": 0,
+    "desync_ttl": 0,
+    "desync_disorder": false,
+    "desync_fake_ttl": 0,
+    "desync_fake_method": "",
+    "desync_fake_data": "",
+    "port": 0
+  },
+  "domain_policies": {
+    "google.com": {
+      "mode": "proxy",
+      "fragment_size": 1024,
+      "fragment_sleep": "10ms"
+    },
+    "youtube.com": {
+      "mode": "proxy",
+      "desync_split": 2
+    },
+    "blocked-site.com": {
+      "mode": "block"
+    }
+  },
+  "ip_policies": {
+    "8.8.8.8/32": {
+      "mode": "direct"
+    },
+    "10.0.0.0/8": {
+      "mode": "direct"
+    }
+  }
+}

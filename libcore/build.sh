@@ -22,3 +22,8 @@ proj=../app/libs
 mkdir -p $proj
 cp -f libcore.aar $proj
 echo ">> install $(realpath $proj)/libcore.aar"
+
+# Build lumine plugin
+echo ">> Building lumine plugin..."
+./build_lumine.sh || echo "Warning: lumine build failed"
+

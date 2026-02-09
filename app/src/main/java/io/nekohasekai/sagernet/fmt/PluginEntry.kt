@@ -44,6 +44,16 @@ enum class PluginEntry(
             downloadLink = "https://github.com/MatsuriDayo/plugins/releases?q=Hysteria"
         )
     ),
+    Lumine(
+        "lumine-plugin",
+        SagerNet.application.getString(R.string.action_lumine),
+        "io.nekohasekai.sagernet.plugin.lumine",
+        DownloadSource(
+            playStore = false,
+            fdroid = false,
+            downloadLink = "https://github.com/UcnacDx2/lumine"
+        )
+    ),
     ;
 
     data class DownloadSource(
