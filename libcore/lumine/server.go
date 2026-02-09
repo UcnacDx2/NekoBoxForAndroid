@@ -231,6 +231,7 @@ func handleSOCKS5(clientConn net.Conn, id uint32) {
 		domainBytes, err := readN(clientConn, int(lenByte[0]))
 		if err != nil {
 			logger.Println("Read domain fail:", err)
+			return
 		}
 		originHost = string(domainBytes)
 		var fail, block bool

@@ -18,7 +18,7 @@ func init() {
 		PreferGo: true,
 		Dial: func(ctx context.Context, network, address string) (net.Conn, error) {
 			dialer := net.Dialer{Timeout: 3 * time.Second}
-			if conn, err := dialer.DialContext(ctx, "udp", dns1); err != nil {
+			if conn, err := dialer.DialContext(ctx, "udp", dns1); err == nil {
 				return conn, nil
 			}
 			return dialer.DialContext(ctx, "udp", dns2)
