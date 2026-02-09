@@ -6,15 +6,10 @@ import (
 	"io"
 	"log"
 	"net"
-	"net/http"
 	"os"
 	"slices"
 	"sync"
-	"sync/atomic"
-	"time"
 )
-
-var httpConnID uint32
 
 // LoadConfig loads the configuration from the specified file
 func LoadConfig(configPath string) (string, string, error) {
@@ -270,6 +265,3 @@ func handleSOCKS5(clientConn net.Conn, id uint32) {
 	handleTunnel(policy, replyFirst, dstConn, clientConn,
 		logger, target, originHost, closeBoth)
 }
-
-func handleHTTP(w http.ResponseWriter, req *http.Request) {
-	connID := atomic.AddUint32(&httpConnID, 1)
