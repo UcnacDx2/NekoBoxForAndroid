@@ -6,3 +6,4 @@ binary*.go
 build
 .build
 env_*.sh
+!env_java.sh
