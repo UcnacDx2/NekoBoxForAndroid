@@ -7,6 +7,7 @@ toolchain go1.23.6
 require (
 	github.com/matsuridayo/libneko v1.0.0 // replaced
 	github.com/miekg/dns v1.1.67
+	github.com/moi-si/addrtrie v0.1.3
 	github.com/oschwald/maxminddb-golang v1.13.1
 	github.com/sagernet/quic-go v0.52.0-sing-box-mod.3
 	github.com/sagernet/sing v0.7.18
