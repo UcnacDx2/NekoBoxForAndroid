@@ -1,0 +1,38 @@
+{
+  "socks5_address": "127.0.0.1:1080",
+  "http_address": "none",
+  "dns_addr": "8.8.8.8:53",
+  "udp_minsize": 4096,
+  "max_jump": 30,
+  "transmit_file_limit": 2,
+  "dns_cache_ttl": 259200,
+  "fake_ttl_cache_ttl": 259200,
+  "default_policy": {
+    "connect_timeout": "10s",
+    "mode": "tls-rf",
+    "num_records": 10,
+    "num_segs": 3,
+    "oob": false,
+    "send_interval": "200ms"
+  },
+  "domain_policies": {
+    "*.google.com;*.youtube.com;*.googleapis.com": {
+      "mode": "tls-rf",
+      "num_records": 15,
+      "num_segs": 4,
+      "send_interval": "250ms"
+    },
+    "*.cloudflare.com;*.twitter.com;*.facebook.com": {
+      "mode": "ttl-d",
+      "fake_ttl": 17,
+      "fake_sleep": "200ms"
+    },
+    "*.github.com;*.githubusercontent.com": {
+      "mode": "tls-rf",
+      "num_records": 8,
+      "num_segs": 2,
+      "send_interval": "100ms"
+    }
+  },
+  "ip_policies": {}
+}
