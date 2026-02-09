@@ -127,7 +127,7 @@ func (p *Policy) UnmarshalJSON(data []byte) error {
 		NumSegments    *int            `json:"num_segs"`
 		OOB            BoolWithDefault `json:"oob"`
 		ModMinorVer    BoolWithDefault `json:"mod_minor_ver"`
-		SendInterval   *string         `json:"send_Interval"`
+		SendInterval   *string         `json:"send_interval"`
 		FakeTTL        *int            `json:"fake_ttl"`
 		FakeSleep      *string         `json:"fake_sleep"`
 		MaxTTL         *int            `json:"max_ttl"`
@@ -200,7 +200,7 @@ func (p *Policy) UnmarshalJSON(data []byte) error {
 
 	if tmp.Attempts != nil {
 		if *tmp.Attempts < 1 {
-			return fmt.Errorf("attempts %d: must be greater than 1", *tmp.Attempts)
+			return fmt.Errorf("attempts %d: must be at least 1", *tmp.Attempts)
 		} else {
 			p.Attempts = *tmp.Attempts
 		}

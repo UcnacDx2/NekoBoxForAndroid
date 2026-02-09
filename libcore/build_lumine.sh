@@ -28,6 +28,9 @@ declare -A NDK_ARCHS=(
     ["x86_64"]="x86_64-linux-android"
 )
 
+# API Level 21 (Android 5.0) - Matches the minimum SDK version of NekoBox
+# This ensures compatibility with the broadest range of devices while
+# providing necessary modern features
 API_LEVEL=21
 
 # Detect OS for NDK path
