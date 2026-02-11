@@ -413,6 +413,10 @@ class ConfigurationFragment @JvmOverloads constructor(
                 startActivity(Intent(requireActivity(), NaiveSettingsActivity::class.java))
             }
 
+            R.id.action_new_lumine -> {
+                startActivity(Intent(requireActivity(), LumineSettingsActivity::class.java))
+            }
+
             R.id.action_new_hysteria -> {
                 startActivity(Intent(requireActivity(), HysteriaSettingsActivity::class.java))
             }
