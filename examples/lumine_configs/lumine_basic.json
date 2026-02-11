@@ -1,0 +1,29 @@
+{
+  "socks5_address": "127.0.0.1:1080",
+  "http_address": "none",
+  "dns_addr": "https://1.1.1.1/dns-query",
+  "udp_minsize": 0,
+  "dns_cache_ttl": 3600,
+  "ttl_cache_ttl": 0,
+  "default_policy": {
+    "mode": "proxy",
+    "connect_timeout": "10s",
+    "read_timeout": "30s",
+    "write_timeout": "30s",
+    "reply_first": false,
+    "fragment_size": 1024,
+    "fragment_sleep": "10ms",
+    "fragment_type": "tls",
+    "desync_zero": false,
+    "desync_split": 2,
+    "desync_split_position": 3,
+    "desync_ttl": 0,
+    "desync_disorder": false,
+    "desync_fake_ttl": 0,
+    "desync_fake_method": "",
+    "desync_fake_data": "",
+    "port": 0
+  },
+  "domain_policies": {},
+  "ip_policies": {}
+}

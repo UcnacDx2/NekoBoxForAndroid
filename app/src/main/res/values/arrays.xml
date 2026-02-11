@@ -530,4 +530,16 @@
         <item>@string/sniff_override</item>
     </string-array>
 
+    <string-array name="lumine_fragment_type_entry">
+        <item>TLS</item>
+        <item>TCP</item>
+        <item>None</item>
+    </string-array>
+
+    <string-array name="lumine_fragment_type_value">
+        <item>tls</item>
+        <item>tcp</item>
+        <item>none</item>
+    </string-array>
+
 </resources>

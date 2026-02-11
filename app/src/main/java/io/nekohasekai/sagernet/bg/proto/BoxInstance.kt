@@ -10,6 +10,8 @@ import io.nekohasekai.sagernet.fmt.ConfigBuildResult
 import io.nekohasekai.sagernet.fmt.buildConfig
 import io.nekohasekai.sagernet.fmt.hysteria.HysteriaBean
 import io.nekohasekai.sagernet.fmt.hysteria.buildHysteria1Config
+import io.nekohasekai.sagernet.fmt.lumine.LumineBean
+import io.nekohasekai.sagernet.fmt.lumine.buildLumineConfig
 import io.nekohasekai.sagernet.fmt.mieru.MieruBean
 import io.nekohasekai.sagernet.fmt.mieru.buildMieruConfig
 import io.nekohasekai.sagernet.fmt.naive.NaiveBean
@@ -70,6 +72,18 @@ abstract class BoxInstance(
                     is NaiveBean -> {
                         initPlugin("naive-plugin")
                         pluginConfigs[port] = profile.type to bean.buildNaiveConfig(port)
+                    }
+
+                    is LumineBean -> {
+                        initPlugin("lumine-plugin")
+                        val configFile = File(
+                            SagerNet.application.cacheDir,
+                            "lumine_config_${SystemClock.elapsedRealtime()}.json"
+                        )
+                        configFile.writeText(bean.buildLumineConfig())
+                        cacheFiles.add(configFile)
+                        // Lumine uses its own config file, pass it via command line argument
+                        pluginConfigs[port] = profile.type to "-c ${configFile.absolutePath}"
                     }
 
                     is HysteriaBean -> {

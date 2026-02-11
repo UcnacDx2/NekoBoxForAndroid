@@ -1,0 +1,26 @@
+{
+  "socks5_address": "127.0.0.1:1080",
+  "http_address": "none",
+  "dns_addr": "https://8.8.8.8/dns-query",
+  "dns_cache_ttl": 3600,
+  "default_policy": {
+    "mode": "proxy",
+    "connect_timeout": "10s",
+    "fragment_size": 2048,
+    "fragment_sleep": "5ms",
+    "fragment_type": "tls"
+  },
+  "domain_policies": {
+    "google.com;*.google.com;*.googleapis.com": {
+      "mode": "proxy",
+      "fragment_size": 3072,
+      "fragment_sleep": "3ms"
+    },
+    "youtube.com;*.youtube.com;*.googlevideo.com": {
+      "mode": "proxy",
+      "fragment_size": 4096,
+      "fragment_sleep": "2ms"
+    }
+  },
+  "ip_policies": {}
+}

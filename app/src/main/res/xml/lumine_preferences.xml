@@ -1,0 +1,91 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <EditTextPreference
+        app:icon="@drawable/ic_social_emoji_symbols"
+        app:key="profileName"
+        app:title="@string/profile_name"
+        app:useSimpleSummaryProvider="true" />
+
+    <PreferenceCategory app:title="@string/proxy_cat">
+
+        <EditTextPreference
+            app:icon="@drawable/ic_hardware_router"
+            app:key="lumine_socks5_address"
+            app:title="@string/lumine_socks5_address"
+            app:summary="@string/lumine_socks5_address_summary"
+            app:defaultValue="127.0.0.1:1080"
+            app:useSimpleSummaryProvider="true" />
+
+        <EditTextPreference
+            app:icon="@drawable/ic_baseline_web_24"
+            app:key="lumine_http_address"
+            app:title="@string/lumine_http_address"
+            app:summary="@string/lumine_http_address_summary"
+            app:defaultValue="none"
+            app:useSimpleSummaryProvider="true" />
+
+        <EditTextPreference
+            app:icon="@drawable/ic_baseline_dns_24"
+            app:key="lumine_dns_addr"
+            app:title="@string/lumine_dns_addr"
+            app:summary="@string/lumine_dns_addr_summary"
+            app:defaultValue="https://1.1.1.1/dns-query"
+            app:useSimpleSummaryProvider="true" />
+
+        <EditTextPreference
+            app:icon="@drawable/ic_baseline_timer_24"
+            app:key="lumine_dns_cache_ttl"
+            app:title="@string/lumine_dns_cache_ttl"
+            app:summary="@string/lumine_dns_cache_ttl_summary"
+            app:defaultValue="3600"
+            app:useSimpleSummaryProvider="true" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="@string/lumine_traffic_obfuscation">
+
+        <EditTextPreference
+            app:icon="@drawable/ic_baseline_view_in_ar_24"
+            app:key="lumine_fragment_size"
+            app:title="@string/lumine_fragment_size"
+            app:summary="@string/lumine_fragment_size_summary"
+            app:defaultValue="1024"
+            app:useSimpleSummaryProvider="true" />
+
+        <EditTextPreference
+            app:icon="@drawable/ic_baseline_schedule_24"
+            app:key="lumine_fragment_sleep"
+            app:title="@string/lumine_fragment_sleep"
+            app:summary="@string/lumine_fragment_sleep_summary"
+            app:defaultValue="10ms"
+            app:useSimpleSummaryProvider="true" />
+
+        <moe.matsuri.nb4a.ui.SimpleMenuPreference
+            app:defaultValue="tls"
+            app:entries="@array/lumine_fragment_type_entry"
+            app:entryValues="@array/lumine_fragment_type_value"
+            app:icon="@drawable/ic_baseline_layers_24"
+            app:key="lumine_fragment_type"
+            app:title="@string/lumine_fragment_type"
+            app:useSimpleSummaryProvider="true" />
+
+        <EditTextPreference
+            app:icon="@drawable/ic_baseline_call_split_24"
+            app:key="lumine_desync_split"
+            app:title="@string/lumine_desync_split"
+            app:summary="@string/lumine_desync_split_summary"
+            app:defaultValue="2"
+            app:useSimpleSummaryProvider="true" />
+
+        <EditTextPreference
+            app:icon="@drawable/ic_baseline_location_on_24"
+            app:key="lumine_desync_split_position"
+            app:title="@string/lumine_desync_split_position"
+            app:summary="@string/lumine_desync_split_position_summary"
+            app:defaultValue="3"
+            app:useSimpleSummaryProvider="true" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

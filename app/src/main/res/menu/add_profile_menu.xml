@@ -52,6 +52,9 @@
                         android:id="@+id/action_new_naive"
                         android:title="@string/action_naive" />
                     <item
+                        android:id="@+id/action_new_lumine"
+                        android:title="@string/action_lumine" />
+                    <item
                         android:id="@+id/action_new_hysteria"
                         android:title="@string/action_hysteria" />
                     <item
