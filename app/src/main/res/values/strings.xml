@@ -580,4 +580,25 @@
     <string name="minimize">Minimize</string>
     <string name="app_list_permission_denied">Unable to read installed apps.\nThis is usually because the system has restricted app read permissions.\nPlease grant permissions in the system settings.</string>
     <string name="open_app_settings">Open System Settings</string>
+
+    <!-- Lumine Settings -->
+    <string name="lumine_socks5_address">SOCKS5 Address</string>
+    <string name="lumine_socks5_address_summary">Local SOCKS5 proxy address</string>
+    <string name="lumine_http_address">HTTP Address</string>
+    <string name="lumine_http_address_summary">Local HTTP proxy address (set to \'none\' to disable)</string>
+    <string name="lumine_dns_addr">DNS Address</string>
+    <string name="lumine_dns_addr_summary">DNS server for resolution (supports DoH)</string>
+    <string name="lumine_dns_cache_ttl">DNS Cache TTL</string>
+    <string name="lumine_dns_cache_ttl_summary">DNS cache time in seconds</string>
+    <string name="lumine_traffic_obfuscation">Traffic Obfuscation</string>
+    <string name="lumine_fragment_size">Fragment Size</string>
+    <string name="lumine_fragment_size_summary">TLS record fragment size in bytes</string>
+    <string name="lumine_fragment_sleep">Fragment Sleep</string>
+    <string name="lumine_fragment_sleep_summary">Delay between fragments (e.g., 10ms)</string>
+    <string name="lumine_fragment_type">Fragment Type</string>
+    <string name="lumine_desync_split">Desync Split</string>
+    <string name="lumine_desync_split_summary">Number of TCP segments to split</string>
+    <string name="lumine_desync_split_position">Desync Split Position</string>
+    <string name="lumine_desync_split_position_summary">Position to split TCP segments</string>
+
 </resources>

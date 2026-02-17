@@ -12,7 +12,10 @@ sing-box / universal proxy toolchain for Android.
 
 - 📖 **[链式代理使用指南](./CHAIN_PROXY_GUIDE.md)** / **[Chain Proxy User Guide](./CHAIN_PROXY_GUIDE.md)** - 如何配置和使用链式代理
 - 📖 **[Lumine 网络预处理插件](./LUMINE_USER_GUIDE.md)** / **[Lumine Network Preprocessing Plugin](./LUMINE_USER_GUIDE.md)** - 流量混淆和 DPI 绕过
+- 🚀 **[Lumine 快速开始](./LUMINE_QUICK_START.md)** / **[Lumine Quick Start](./LUMINE_QUICK_START.md)** - 可从剪切板导入的即用配置
+- 📋 **[Lumine 即用配置](./LUMINE_READY_TO_USE_CONFIGS.txt)** / **[Lumine Ready Configs](./LUMINE_READY_TO_USE_CONFIGS.txt)** - 直接复制粘贴使用
 - 📁 **[配置示例](./examples/chain_proxy_examples/)** / **[Configuration Examples](./examples/chain_proxy_examples/)** - 实用配置示例
+- 📁 **[Lumine 配置文件](./examples/lumine_configs/)** / **[Lumine Config Files](./examples/lumine_configs/)** - JSON 配置和导入链接
 
 ## 下载 / Downloads
 
@@ -50,6 +53,7 @@ https://matsuridayo.github.io
 * Trojan-Go (trojan-go-plugin)
 * NaïveProxy (naive-plugin)
 * Mieru (mieru-plugin)
+* Lumine (lumine-plugin) - Network preprocessing with traffic obfuscation
 
 请到[这里](https://matsuridayo.github.io/nb4a-plugin/)下载插件以获得完整的代理支持.
 
